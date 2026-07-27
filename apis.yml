@@ -1,7 +1,25 @@
 aid: galbot
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/galbot.png
 name: galbot
-description: galbot is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Galbot (银河通用机器人, "Galaxy Universal Robotics") is the official site of
+  a general-purpose, embodied-AI robotics company. It was surfaced through the API
+  Evangelist network as a portfolio company of the venture firm Qiming and profiled
+  here for API and developer-surface enrichment. As of this enrichment pass Galbot
+  publishes only a marketing website rendered as a client-side single-page app; no
+  public developer portal, API documentation, OpenAPI/AsyncAPI specification, SDK,
+  or MCP surface could be discovered. The only machine-readable signals captured are
+  the DNS, TLS, and email-authentication (SPF/DMARC) posture of the galbot.com domain.
 url: https://raw.githubusercontent.com/api-evangelist/galbot/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Robotics
+- Humanoid Robots
+- Embodied AI
+- Artificial Intelligence
+- Hardware
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/galbot-domain-security.yml
 - type: Website
   url: https://galbot.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
